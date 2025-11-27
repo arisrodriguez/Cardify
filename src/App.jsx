@@ -1,33 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='flex flex-col items-center justify-center h-screen'>
+        <div className="w-[60%] space-y-4 text-center">
+          <h1 className="font-bold text-2xl text-blue-700">Bienvenido/a al proyecto de práctica</h1>
+          <p className="font-semibold text-xl text-blue-600">React + Tailwind CSS</p>
+          <p className="text-lg text-gray-600">Usaremos <b>Git</b>: Gestionar los cambios en el proyecto, control de versiones, trabajo por ramas y <b>GitHub</b> para alojar el repositorio facilitando la colaboración y gestión del proyecto de forma remota.</p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
